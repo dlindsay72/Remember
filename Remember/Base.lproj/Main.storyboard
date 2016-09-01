@@ -5,22 +5,90 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Remember" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Remember" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brain" translatesAutoresizingMaskIntoConstraints="NO" id="und-xI-jt6">
+                                <rect key="frame" x="264" y="93" width="240" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Hnu-Cm-oOQ"/>
+                                    <constraint firstAttribute="height" constant="246" id="XvQ-ha-GZX"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DEd-ib-C2r">
+                                <rect key="frame" x="104" y="452" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RJL-0o-uDw"/>
+                                    <constraint firstAttribute="width" constant="560" id="vLQ-xQ-PAw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsJ-Rc-JbH">
+                                <rect key="frame" x="104" y="559" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="No9-3W-R3o"/>
+                                    <constraint firstAttribute="height" constant="50" id="dOt-TG-Wwm"/>
+                                    <constraint firstAttribute="height" constant="50" id="iEz-z1-KRb"/>
+                                    <constraint firstAttribute="width" constant="560" id="iP2-vU-awA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="No9-3W-R3o"/>
+                                        <exclude reference="iEz-z1-KRb"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-gQ-fCF">
+                                <rect key="frame" x="240" y="687" width="289" height="122"/>
+                                <color key="backgroundColor" red="0.30864618290000001" green="0.77524643459999998" blue="0.89474098150000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="HyZ-p7-pMg"/>
+                                    <constraint firstAttribute="height" constant="122" id="OPL-Ic-fgU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="32"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DEd-ib-C2r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="21m-BN-4He"/>
+                            <constraint firstItem="bsJ-Rc-JbH" firstAttribute="top" secondItem="DEd-ib-C2r" secondAttribute="bottom" constant="57" id="6cZ-QK-U5F"/>
+                            <constraint firstItem="1rA-gQ-fCF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9j7-dc-jfj"/>
+                            <constraint firstItem="und-xI-jt6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="ByN-eh-7Nc"/>
+                            <constraint firstItem="bsJ-Rc-JbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EoP-Ug-Ij1"/>
+                            <constraint firstItem="und-xI-jt6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FkK-9f-jdm"/>
+                            <constraint firstItem="1rA-gQ-fCF" firstAttribute="top" secondItem="bsJ-Rc-JbH" secondAttribute="bottom" constant="78" id="SEj-K7-RO9"/>
+                            <constraint firstItem="DEd-ib-C2r" firstAttribute="top" secondItem="und-xI-jt6" secondAttribute="bottom" constant="113" id="cAj-Wy-Nlk"/>
+                            <constraint firstItem="bsJ-Rc-JbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u0O-QP-0Tu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EoP-Ug-Ij1"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="385" y="359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="brain" width="572" height="572"/>
+    </resources>
 </document>
