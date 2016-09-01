@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1536E8769F0D829151B4E911 /* Pods_Remember.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30058100827F4F5519A425D4 /* Pods_Remember.framework */; };
 		7BF1F0B51D7779FC0099DFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1F0B41D7779FC0099DFA4 /* AppDelegate.swift */; };
 		7BF1F0B71D7779FC0099DFA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF1F0B61D7779FC0099DFA4 /* ViewController.swift */; };
 		7BF1F0BA1D7779FC0099DFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF1F0B81D7779FC0099DFA4 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30058100827F4F5519A425D4 /* Pods_Remember.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remember.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71090CEAFF9F7381C8F25DED /* Pods-Remember.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remember.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remember/Pods-Remember.release.xcconfig"; sourceTree = "<group>"; };
+		7B1D99611D78909000A14DC4 /* Remember-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Remember-Bridging-Header.h"; sourceTree = "<group>"; };
 		7BF1F0B11D7779FC0099DFA4 /* Remember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remember.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF1F0B41D7779FC0099DFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF1F0B61D7779FC0099DFA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		7BF1F0BB1D7779FC0099DFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BF1F0BE1D7779FC0099DFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BF1F0C01D7779FC0099DFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC728FCC780ABCF2CC8A32C /* Pods-Remember.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remember.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remember/Pods-Remember.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1536E8769F0D829151B4E911 /* Pods_Remember.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				7BF1F0B31D7779FC0099DFA4 /* Remember */,
 				7BF1F0B21D7779FC0099DFA4 /* Products */,
+				C33E20A4764E0F90DE139787 /* Pods */,
+				818FFA63943999E7BC4608E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,26 @@
 				7BF1F0BB1D7779FC0099DFA4 /* Assets.xcassets */,
 				7BF1F0BD1D7779FC0099DFA4 /* LaunchScreen.storyboard */,
 				7BF1F0C01D7779FC0099DFA4 /* Info.plist */,
+				7B1D99611D78909000A14DC4 /* Remember-Bridging-Header.h */,
 			);
 			path = Remember;
+			sourceTree = "<group>";
+		};
+		818FFA63943999E7BC4608E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30058100827F4F5519A425D4 /* Pods_Remember.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C33E20A4764E0F90DE139787 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CC728FCC780ABCF2CC8A32C /* Pods-Remember.debug.xcconfig */,
+				71090CEAFF9F7381C8F25DED /* Pods-Remember.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BF1F0C31D7779FC0099DFA4 /* Build configuration list for PBXNativeTarget "Remember" */;
 			buildPhases = (
+				43AFCE3C2626C7C70B0DA9B2 /* [CP] Check Pods Manifest.lock */,
 				7BF1F0AD1D7779FC0099DFA4 /* Sources */,
 				7BF1F0AE1D7779FC0099DFA4 /* Frameworks */,
 				7BF1F0AF1D7779FC0099DFA4 /* Resources */,
+				866C2685154E97145B0858EE /* [CP] Embed Pods Frameworks */,
+				37BD474399F8716F450B5984 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 				TargetAttributes = {
 					7BF1F0B01D7779FC0099DFA4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 999T2QHS45;
 					};
 				};
 			};
@@ -129,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37BD474399F8716F450B5984 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remember/Pods-Remember-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43AFCE3C2626C7C70B0DA9B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		866C2685154E97145B0858EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remember/Pods-Remember-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7BF1F0AD1D7779FC0099DFA4 /* Sources */ = {
@@ -249,23 +327,32 @@
 		};
 		7BF1F0C41D7779FC0099DFA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC728FCC780ABCF2CC8A32C /* Pods-Remember.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Remember/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnificCondition.Remember;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Remember/Remember-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7BF1F0C51D7779FC0099DFA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71090CEAFF9F7381C8F25DED /* Pods-Remember.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Remember/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnificCondition.Remember;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Remember/Remember-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +375,7 @@
 				7BF1F0C51D7779FC0099DFA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
